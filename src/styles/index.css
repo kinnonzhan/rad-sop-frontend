@@ -1,0 +1,71 @@
+@import './tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.xs-card {
+  background: var(--xs-content);
+  border: 1px solid var(--xs-separator);
+  border-radius: var(--fp-card-radius);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.xs-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.xs-title::before {
+  content: '';
+  width: 4px;
+  height: 1.05em;
+  border-radius: 2px;
+  background: var(--xs-brand);
+  flex: none;
+}
+
+.xs-section-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--xs-ink);
+  margin: 0 0 12px;
+}
+
+.xs-empty {
+  color: var(--xs-secondary);
+  font-size: 13px;
+  padding: 24px;
+  text-align: center;
+}
+
+.oqc-tabs .ant-tabs-nav {
+  margin-bottom: 16px;
+}
+
+.oqc-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--xs-brand) !important;
+  font-weight: 700;
+}
+
+.oqc-tabs .ant-tabs-ink-bar {
+  background: var(--xs-brand);
+}
+
+.batch-link {
+  color: var(--xs-system-blue);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.batch-link:hover {
+  color: var(--xs-brand);
+}

@@ -1,0 +1,71 @@
+/* Adapted from welcome-ui-design-mcp apple-palette.css (design-rule:4 brand #00A95F) */
+:root,
+[data-fp-theme='light'] {
+  --xs-brand: #00a95f;
+  --xs-brand-80: rgba(0, 169, 95, 0.8);
+  --xs-brand-60: rgba(0, 169, 95, 0.6);
+  --xs-brand-40: rgba(0, 169, 95, 0.4);
+  --xs-brand-20: rgba(0, 169, 95, 0.2);
+  --xs-brand-10: rgba(0, 169, 95, 0.1);
+  --xs-action: var(--xs-brand);
+  --xs-ink: #1d1d1f;
+  --xs-secondary: #6e6e73;
+  --xs-tertiary: #8e8e93;
+  --xs-canvas: #f5f5f7;
+  --xs-content: #fff;
+  --xs-group: #f5f5f7;
+  --xs-field: #fff;
+  --xs-label: #f1f2f4;
+  --xs-separator: rgba(60, 60, 67, 0.12);
+  --xs-control-line: rgba(60, 60, 67, 0.18);
+  --xs-focus: var(--xs-brand);
+  --xs-danger: #c93432;
+  --xs-warning: #9b620b;
+  --xs-system-red: #ff383c;
+  --xs-system-orange: #ff8d28;
+  --xs-system-yellow: #ffd60a;
+  --xs-system-blue: #0088ff;
+  --xs-on-brand: #fff;
+  --xs-type-font: 'HarmonyOS Sans SC', 'PingFang SC', 'Noto Sans SC', system-ui, sans-serif;
+  --xs-type-label-size: 13px;
+  --fp-brand: var(--xs-brand);
+  --fp-text: var(--xs-ink);
+  --fp-muted: var(--xs-secondary);
+  --fp-surface: var(--xs-content);
+  --fp-group: var(--xs-group);
+  --fp-line: var(--xs-separator);
+  --fp-error: var(--xs-danger);
+  --fp-card-radius: 28px;
+  --fp-control-radius: 8px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--xs-type-font);
+  color: var(--xs-ink);
+  background:
+    radial-gradient(1200px 600px at 12% -10%, rgba(0, 169, 95, 0.08), transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, rgba(0, 136, 255, 0.06), transparent 50%),
+    var(--xs-canvas);
+  -webkit-font-smoothing: antialiased;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--xs-brand);
+  outline-offset: 2px;
+}
